@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: end;
+}
+
+.App{
+  height: 100%;
+  width: 85%;
+  flex-grow: 1;
+  margin-bottom: 5vh;
+  text-align: center;
+  padding-right: 50px;
+  padding-left: 7vw;
+}
+
+.app_body{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.wrapper{
+  width: 85%;
+
+}
+
+.swiper{
+  height: 200px !important;
+  overflow-y: auto !important;
+}
+
+
+.swiper-wrapper {
+  margin-left: 7% !important;
+}
+
+.swiper-pagination {
+  position: static !important;
+}
+.swiper-button-disabled{
+  opacity: 0 !important;
+}
+.isText, .isTextTemporal{
+  fill: gray
+}
+
+.isTextName{
+  fill: #42567A;
+
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+.pount{
+  cursor: pointer;
+}
+
+@media (max-width: 740px) {
+  .swiper-slide-active{
+    margin-left: 15%;
+  }
+}

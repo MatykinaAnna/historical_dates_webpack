@@ -1,0 +1,93 @@
+
+
+.wrapperCircle{
+    transform: rotate(0deg);
+    transition: transform 1s;
+    // background-color: #42567A;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divButtons{
+    width: 120px;
+    height: 88px;
+    box-sizing: border-box;
+    margin-top: 10px;
+
+    .buttons{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div {
+        color: #42567A;
+        font-style: normal;
+        font-size: 1.2em;
+        text-align: left;
+    }
+    
+}
+
+.wrapperButtons{
+    z-index: 100;
+}
+
+.btnForward, .btnBack{
+    cursor: pointer;
+    width: 50px;
+}
+
+.btnForward{
+    transform: rotate(180deg);
+    width: 50px;
+}
+
+.years{
+    position: absolute;
+    display: flex;
+    font-size: 10em;
+    z-index: 10;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 20px;
+
+    top: 390px;
+    left: 50%;
+    /* коррекция положения элемента */
+    transform: translate(-50%, -50%);
+
+}
+
+.yearStart{
+    color: #5d5fef
+}
+.yearEnd{
+    color: #ef5da8
+}
+
+@media (max-width: 1060px) {
+    .years {
+        font-size: 6em;
+        border-bottom: solid #42567a 1px;
+    }
+    .wrapperCircle {
+        display: none;
+      }
+  }
+
+@media (max-width: 430px) {
+    .frame >div.header{
+      font-size: 2.5em;
+    }
+    .years {
+        font-size: 3em;
+    }
+  }
